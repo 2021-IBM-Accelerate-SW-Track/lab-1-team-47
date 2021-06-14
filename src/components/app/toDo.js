@@ -43,9 +43,10 @@ const Main = () => {
 				<ul className="textFont">
 					{
 						newItem.map((val) => {
-							return <li> {val} </li>;
+							return <li> {val}  <input type ="checkbox"/></li> ;
 						})
 					}
+					
 				</ul>
 			</div>
 			<br />
