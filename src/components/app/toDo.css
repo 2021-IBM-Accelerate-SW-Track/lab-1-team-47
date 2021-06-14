@@ -1,0 +1,62 @@
+.childOne{
+	width: 75%;
+	height: 65vh;
+	background: #DBE6F6;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #C5796D, #DBE6F6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+	border-radius: 15px;
+	margin: auto;
+}
+
+input{
+	padding: 25px;
+	text-align: left;
+	height: 30px;
+	background: #c0c3c98e;
+	font-size:	20px;
+	font-weight: 500;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	width: 65%;
+	border-bottom: 1px solid #dbe6f650;
+	outline: none;
+	margin-right: 20px;
+}
+
+
+.AddBtn{
+	width: 40px;
+	height: 45px;
+	background-color: #aa4b6b;
+	color: rgb(195, 195, 195) !important;
+	box-shadow: 5px 5px 15px -5px rgba(241, 195, 202, 0.897);
+	border-radius: 50% !important;
+}
+
+.textFont{
+	text-align: left;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	text-decoration-color: darkgray;
+	font-weight: 500;
+}
+
+.childTwo{
+	width: 35%;
+	height: 7vh;
+	background: #C5796D;  
+ 
+	box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+	border-radius: 15px;
+	margin: auto;
+}
+
+.delBtn{
+	width: 100%;
+	height: 7vh;
+	background-color: #aa4b6b; 
+	box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.644);
+	border-radius: 15px;
+	margin: auto;
+}
