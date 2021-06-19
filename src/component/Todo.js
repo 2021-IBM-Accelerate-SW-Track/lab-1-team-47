@@ -3,7 +3,7 @@ import TodoForm from "./TodoForm";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
 import Checkbox from "@material-ui/core/Checkbox";
-
+import Input from "@material-ui/core/Input";
 const Todo = ({ todos, completeTodo, removeTodo, editTodo }) => {
   const [edit, setEdit] = useState({
     id: null,
@@ -17,7 +17,10 @@ const Todo = ({ todos, completeTodo, removeTodo, editTodo }) => {
       value: "",
     });
   };
-
+  
+ 
+  
+ 
   if (edit.id) {
     return <TodoForm edit={edit} onSubmit={submitUpdatedTodo} />;
   }
@@ -41,6 +44,12 @@ const Todo = ({ todos, completeTodo, removeTodo, editTodo }) => {
           onClick={() => removeTodo(todo.id)}
           className="deleteIcon"
         />
+         <input id="ing" type="text" value={ todo.Date}  />
+         
+
+
+
+
       </div>
     </div>
   ));
