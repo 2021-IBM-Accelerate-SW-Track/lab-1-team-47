@@ -6,7 +6,6 @@
 }
 
 body {
-
   background: linear-gradient(to left, #3216e7, #98a0eb);
 }
 
@@ -61,7 +60,6 @@ h1 {
   border-radius: 0 4px 4px 0;
   outline: none;
   cursor: pointer;
-
 }
 
 .todoEdit {
