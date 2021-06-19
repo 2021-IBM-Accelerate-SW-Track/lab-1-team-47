@@ -6,17 +6,23 @@ import DenseAppBar from './components/app/appBar';
 import Main from './components/app/toDo';
 
 
-class App extends Component {
-  render() {
-    return(
-      <div className="App">
-        <Header />
-        <DenseAppBar />
-				<br />
-				<Main />
-      </div>  
-    );
-  }
+import React from 'react';
+
+
+
+
+import "./App.css";
+import Header from "./component/header";
+import TodoList from "./component/TodoList";
+
+function App() {
+  return (
+    <div className="todo">
+      <Header />
+      <TodoList />
+    </div>
+  );
+
 }
 
 export default App;
