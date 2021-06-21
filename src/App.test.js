@@ -19,7 +19,7 @@ afterEach(() => {
 test('test that App component renders', () => {
   render(<App />, container);
  });
-
+//clean
 test('test that new-item-button is a button', () => {
   render(<App/>, container);
   const element = screen.getByTestId('new-item-button');
