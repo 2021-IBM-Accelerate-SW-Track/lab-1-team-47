@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import TextField from "@material-ui/core/TextField";
+
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : "");
   const inputRef = useRef(null);
@@ -14,7 +14,7 @@ function TodoForm(props) {
   
   const submitTodo = (e) => {
     e.preventDefault();
-     if(input!=""){
+     if(input!==""){
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
       text: input,
