@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./header.css";
 import logoUrl from "./team47.jpg";

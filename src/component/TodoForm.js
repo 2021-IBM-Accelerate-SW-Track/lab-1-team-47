@@ -11,20 +11,20 @@ function TodoForm(props) {
   const changeTodo = (e) => {
     setInput(e.target.value);
   };
-  
+
   const submitTodo = (e) => {
     e.preventDefault();
-     if(input!==""){
-    props.onSubmit({
-      id: Math.floor(Math.random() * 10000),
-      text: input,
-      isComplete: false,
-      Date:new Date(),
-     
-    });}
+    if (input !== "") {
+      props.onSubmit({
+        id: Math.floor(Math.random() * 10000),
+        text: input,
+        isComplete: false,
+        Date: new Date(),
+      });
+    }
     setInput("");
   };
- 
+
   return (
     <form onSubmit={submitTodo} className="todoForm">
       {props.edit ? (
@@ -37,7 +37,7 @@ function TodoForm(props) {
             name="text"
             ref={inputRef}
           />
-          
+
           <button className="btnEdit" onClick={submitTodo}>
             Update
           </button>
@@ -55,7 +55,6 @@ function TodoForm(props) {
           <button className="btn" onClick={submitTodo}>
             Add
           </button>
-          
         </div>
       )}
     </form>

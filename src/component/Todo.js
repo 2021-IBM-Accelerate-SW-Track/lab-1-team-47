@@ -17,10 +17,7 @@ const Todo = ({ todos, completeTodo, removeTodo, editTodo }) => {
       value: "",
     });
   };
-  
- 
-  
- 
+
   if (edit.id) {
     return <TodoForm edit={edit} onSubmit={submitUpdatedTodo} />;
   }
@@ -44,12 +41,7 @@ const Todo = ({ todos, completeTodo, removeTodo, editTodo }) => {
           onClick={() => removeTodo(todo.id)}
           className="deleteIcon"
         />
-         <input id="ing" type="text" value={ todo.Date}  />
-         
-
-
-
-
+        <input id="ing" type="text" value={todo.Date} />
       </div>
     </div>
   ));
