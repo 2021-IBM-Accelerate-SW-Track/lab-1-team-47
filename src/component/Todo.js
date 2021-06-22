@@ -41,7 +41,7 @@ const Todo = ({ todos, completeTodo, removeTodo, editTodo }) => {
           onClick={() => removeTodo(todo.id)}
           className="deleteIcon"
         />
-        <input id="ing" type="text" value={todo.Date} />
+        <input id="ing" type="text" value={todo.Date} style={{ color: "Blue" }}/>
       </div>
     </div>
   ));
